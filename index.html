@@ -129,7 +129,7 @@
 
     async function loadReflections() {
       try {
-        const response = await fetch('/reflections.json');
+        const response = await fetch('./reflections.json');
         reflections = await response.json();
         if (reflections.length > 0) {
           currentIndex = reflections.length - 1; // Start with most recent
